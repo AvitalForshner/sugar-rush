@@ -1,0 +1,10 @@
+node_modules/
+.env
+dist/
+*.log
+.vscode/
+.DS_Store
+
+# Personal files (not part of the project)
+מחירים.txt
+ניתוח המערכת.docx

@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "server": "cd nodeJS && node app.js",
+    "client": "cd react && npm run dev"
+  },
+  "dependencies": {
+    "react-dom": "^19.2.5",
+    "react-router-dom": "^7.15.0"
+  }
+}

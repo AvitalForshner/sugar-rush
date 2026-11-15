@@ -2,10 +2,19 @@
 
 A full-stack MERN e-commerce store for candy, snacks, chocolates and gift boxes, with a Hebrew (RTL) interface, JWT authentication and an admin dashboard.
 
-<!-- Add screenshots here, for example:
-![Home page](screenshots/home.png)
-![Admin dashboard](screenshots/admin.png)
--->
+## Screenshots
+
+| Home page | Product catalog |
+|-----------|-----------------|
+| ![Home page](screenshots/home.png) | ![Product catalog](screenshots/products.png) |
+
+| Admin – order management | Admin – user management |
+|--------------------------|-------------------------|
+| ![Admin orders](screenshots/admin-orders.png) | ![Admin users](screenshots/admin-users.png) |
+
+| My orders |
+|-----------|
+| ![My orders](screenshots/my-orders.png) |
 
 ## Features
 
@@ -52,7 +61,7 @@ A full-stack MERN e-commerce store for candy, snacks, chocolates and gift boxes,
 
 ### Prerequisites
 - Node.js 18+
-- MongoDB (local or MongoDB Atlas)
+- MongoDB Atlas (or a local MongoDB)
 
 ### 1. Install dependencies
 ```bash

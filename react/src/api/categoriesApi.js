@@ -1,7 +1,8 @@
+import { API_URL } from "./config";
 import axios from "axios"
 import { authHeader } from "./authHeader";
 
-const BASIC_URL="http://localhost:5000/categories"
+const BASIC_URL=`${API_URL}/categories`
 
 export const getAllCategories = async()=>{
     try{

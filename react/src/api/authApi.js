@@ -1,5 +1,6 @@
+import { API_URL } from "./config";
 import axios from 'axios';
-const BASIC_URL = "http://localhost:5000/auth";
+const BASIC_URL = `${API_URL}/auth`;
 
 export const login = async (credentials) => {
     try {

@@ -1,7 +1,8 @@
+import { API_URL } from "./config";
 import axios from "axios";
 import { authHeader, serverMessage } from "./authHeader";
 
-const BASIC_URL = "http://localhost:5000/orders";
+const BASIC_URL = `${API_URL}/orders`;
 
 export const getAllOrders = async () => {
     try {

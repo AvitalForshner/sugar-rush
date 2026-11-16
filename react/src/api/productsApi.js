@@ -1,6 +1,7 @@
+import { API_URL } from "./config";
 import axios from "axios";
 import { authHeader } from "./authHeader";
-const BASE_URL = "http://localhost:5000/products";
+const BASE_URL = `${API_URL}/products`;
 
 export const getAllProducts = async () => {
     try {

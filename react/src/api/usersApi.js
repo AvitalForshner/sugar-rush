@@ -1,6 +1,7 @@
+import { API_URL } from "./config";
 import axios from "axios"
 import { authHeader, serverMessage } from "./authHeader";
-const BASIC_URL="http://localhost:5000/users"
+const BASIC_URL=`${API_URL}/users`
 export const getAllUsers=async()=>{
     try{
         const response=await axios.get(`${BASIC_URL}/getAll`, authHeader());

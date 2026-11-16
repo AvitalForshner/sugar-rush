@@ -2,6 +2,9 @@
 
 A full-stack MERN e-commerce store for candy, snacks, chocolates and gift boxes, with a Hebrew (RTL) interface, JWT authentication and an admin dashboard.
 
+**🔗 Live demo:** https://sugar-rush-store.onrender.com
+*(Hosted on Render's free tier – the first load may take up to a minute while the server wakes up.)*
+
 ## Screenshots
 
 | Home page | Product catalog |
@@ -70,6 +73,8 @@ cd ../react && npm install
 ```
 
 ### 2. Configure the server
+The client reads the API address from `VITE_API_URL` (defaults to `http://localhost:5000`).
+
 Create `nodeJS/.env` based on `nodeJS/.env.example`:
 ```env
 DB_URI=mongodb://localhost:27017/candys

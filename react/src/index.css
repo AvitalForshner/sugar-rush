@@ -12,8 +12,11 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
-  overflow-x: hidden; 
+}
+
+/* overflow רק על body (ובלי height: 100%) - כך הגלילה נשארת של החלון עצמו, ו-ScrollToTop יכול לגלול לראש העמוד */
+body {
+  overflow-x: hidden;
 }
 
 

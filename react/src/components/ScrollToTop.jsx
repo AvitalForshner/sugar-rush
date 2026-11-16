@@ -1,13 +1,14 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-// בכל מעבר דף - גוללים לראש העמוד (React Router לא עושה את זה לבד)
+// בכל ניווט - גוללים לראש העמוד (React Router לא עושה את זה לבד).
+// משתמשים ב-location.key ולא ב-pathname, כדי שגם לחיצה על דף הבית כשכבר נמצאים בו תחזיר למעלה
 export default function ScrollToTop() {
-  const { pathname } = useLocation();
+  const { key } = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [pathname]);
+  }, [key]);
 
   return null;
 }

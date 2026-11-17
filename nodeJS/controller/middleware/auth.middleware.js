@@ -18,7 +18,8 @@ export const verifyToken = (req, res, next) => {
         req.user = decoded;
         next();
     } catch (err) {
-        res.status(403).json({ message: "טוקן לא חוקי או שפג תוקפו", error: err.message });
+        // 401 = לא מזוהה (טוקן מזויף או שפג תוקפו). 403 שמור למי שמזוהה אבל אין לו הרשאה (verifyAdmin)
+        res.status(401).json({ message: "טוקן לא חוקי או שפג תוקפו", error: err.message });
     }
 }
 
